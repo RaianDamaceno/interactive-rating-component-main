@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+    background-color: var(--VeryDarkBlue);
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: var(--White);
+}
+
+h2 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--LightGrey);
+    margin-top: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    width: 412px;
+    height: 416px;
+    background:  radial-gradient(98.96% 98.96% at 50% 0%,
+                             #232A34 0%, #181E27 100%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container, .card-container-end {
+    width: 341px;
+    height: 352px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--VeryDarkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-rating {
+    height: 51px;
+    width: 51px;
+    border-radius: 50%;
+    background-color: #262E38;
+    border: none;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: var(--LightGrey)
+}
+
+.btn-rating:hover {
+    background-color: var(--Orange);
+    color: var(--White)
+}
+
+.btn-rating:focus {
+    background-color: var(--MediumGrey);
+    color: var(--White)
+}
+
+.submit {
+    height: 45px;
+    width: 100%;
+    background: var(--Orange);
+    border-radius: 22.5px;
+    border: none;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: var(--White);
+}
+
+.submit:hover {
+    background: var(--White);
+    color: var(--Orange)
+}
+
+.card-container-end {
+    align-items: center;
+    display: none;
+}
+
+.rating-sended{ 
+    background: #262E38;
+    border-radius: 22.5px;
+    width: 193px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-value {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--Orange)
+}
+@media only screen and (min-device-width: 375px) and (max-width: 768px){ 
+    .card {
+        width: 327px;
+        height: 360px;
+    }
+
+    .card-container {
+        width: 279px;
+        height: 304px;
+    }
+    
+}
