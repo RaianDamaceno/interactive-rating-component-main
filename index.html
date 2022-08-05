@@ -22,11 +22,11 @@
               to help us improve our offering!</h2>
           </div>
           <div class="rating">
-            <button class="btn-rating" value="1" onClick="getButtonSelectedValue(this.value)">1</button>
-            <button class="btn-rating" value="2" onClick="getButtonSelectedValue(this.value)">2</button>
-            <button class="btn-rating" value="3" onClick="getButtonSelectedValue(this.value)">3</button>
-            <button class="btn-rating" value="4" onClick="getButtonSelectedValue(this.value)">4</button>
-            <button class="btn-rating" value="5" onClick="getButtonSelectedValue(this.value)">5</button>
+            <button class="btn-rating" value="1" id="one" onClick="addClass(this.id)">1</button>
+            <button class="btn-rating" value="2" id="two" onClick="addClass(this.id)">2</button>
+            <button class="btn-rating" value="3" id="three" onClick="addClass(this.id)">3</button>
+            <button class="btn-rating" value="4" id="four" onClick="addClass(this.id)">4</button>
+            <button class="btn-rating" value="5" id="five" onClick="addClass(this.id)">5</button>
           </div>
           <div>
             <button class="submit" onClick="setValue()">SUBMIT</button>
@@ -37,7 +37,7 @@
             <img src="./images/illustration-thank-you.svg">
           </figure>
           <div class="rating-sended">
-            <span class="rating-value">You selected 4 out of 5</span>
+            <span class="rating-value" id="rating"></span>
           </div>
           <h1>Thank you!</h1>
           <h2>

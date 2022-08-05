@@ -164,9 +164,29 @@ h2 {
         height: 360px;
     }
 
-    .card-container {
+    .card-container, .card-container-end {
         width: 279px;
         height: 304px;
     }
+
+    .rating-sended {
+        margin-top: 32px
+    }
     
+    h1, h2 {
+        text-align: center;
+    }
+    
+    h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        margin-top: 32px
+    }
+
+    h2 {
+        font-size: 15px;
+        line-height: 24px;
+    }
 }
